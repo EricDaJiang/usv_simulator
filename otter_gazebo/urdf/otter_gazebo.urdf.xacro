@@ -12,6 +12,12 @@
   <xacro:arg name="ground_truth_enabled"  default="false" /> 
   <xacro:arg name="direct_control_plugin" default="false" />
 
+  <link name="dummy">
+   </link>
+  <joint name="dummy_joint" type="fixed">
+     <parent link="dummy"/>
+     <child link="base_link"/>
+   </joint>
 
   <!-- Define macros -->
 
